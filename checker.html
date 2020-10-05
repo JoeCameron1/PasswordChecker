@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!-- jQuery Library-->
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Create-a-Password</div>
+        <div class="credential-input">
+            <input id="username" type="text" placeholder="Username" />
+        </div>
+        <div class="credential-input">
+            <input id="password" type="password" placeholder="Password" />
+        </div>
+        <div class="password-result">
+            <span id="message"></span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="subtitle">
+            Here are some tips:
+        </div>
+        <div class="tips">
+
+            <div class="todo-list">
+                <div class="unchecked">
+                    <div class="todo-item">Your password should be more than 8 characters long</div>
+                </div>
+                <div class="unchecked">
+                    <div class="todo-item">Try using a some capital letters too</div>
+                </div>
+                <div class="unchecked">
+                    <div class="todo-item">Try using some numbers</div>
+                </div>
+                <div class="unchecked">
+                    <div class="todo-item">Try interesting symbols like & @ % ! * # ?</div>
+                </div>
+            </div>
+
+            <div class="important">
+                <div class="todo-item">Make sure your password is easy to remember</div>
+            </div>
+        </div>
+        <div class="score-container">
+            You've scored
+            <span id="score">0</span> out of 4
+        </div>
+    </div>
+</body>
+
+</html>
