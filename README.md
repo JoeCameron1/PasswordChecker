@@ -35,6 +35,10 @@ As a result, the feedback should be instantaneous and dynamic as the user is typ
 
 #### User Interface
 
+|![PasswordCheckerExample](PasswordCheckerExample.png)|
+|:--:|
+|*An example of the password checker's interface after a user has entered a strong username-password combination.*|
+
 Particular care was taken when designing a clear and usable interface.
 The following criteria were taken into account:
 * Varying the importance and criticality of respective communications with the user.
