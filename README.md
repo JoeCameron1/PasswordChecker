@@ -58,3 +58,36 @@ Instead, while meeting 3 out of 4 of the requirements gets the user a strong pas
 
 As each requirement is met, a green tick is displayed next to it, and once they’re all satisfied, the score turns green too.
 This is in keeping with the colour scheme used to convey password strength to not confuse the user.
+
+#### Assessing Password Strength
+
+When assessing password strength, both technical factors and usability factors were considered.
+However, before the password strength could be evaluated, the checker first checks for the absence of fundamental security flaws.
+
+For example, if an entered password is shorter than 8 characters, a message encouraging the use of more characters is displayed, as recommended by [NIST guidelines](https://pages.nist.gov/800-63-3/sp800-63b.html#sec5).
+Conversely, if an entered password is longer than 32 characters (a difficult length of password for a child to remember), a message warning of its length is displayed.
+This message hints that the password, although being potentially very secure, may be too difficult to remember, hence, it also discourages the extremely insecure practice of writing passwords down.
+
+If the entered password matches a password from the [SecLists set of common passwords](https://github.com/danielmiessler/SecLists), a warning message is displayed.
+There is a function in the [script.js](script.js) file that looks for these common passwords.
+We use a trie data structure that means even if our list of common passwords is thousands of entries long, lookup is perceptually instant.
+
+If common number-letter replacements are used to replace certain letters within the common passwords with numbers (e.g. ‘5’ replacing ‘s’), the warning message stating 'Replacing letters with numbers isn't enough ;)' is displayed.
+Again, there is a function in the [script.js](script.js) file that looks for these common number-letter replacements.
+These number-letter replacements want to be avoided as they are a well known tactic in password creation that can be exploited by attackers.
+
+Once these basic flaws are confirmed to be non-existent, the strength of a password is calculated.
+Initially, before checking, the strength of a password is assumed to be 0.
+From that baseline, the final strength is then determined by the presence of the following properties within the password:
+* If an entered password is 8 characters or longer, the password strength is increased by 1.
+* If an entered password contains a mixture of lower and upper case characters, the password strength is increased by 1.
+* If an entered password contains a mixture of alphabetic characters and numeric characters, the password strength is increased by 1.
+* If an entered password contains a mixture of alphanumeric characters and special characters (symbols such as !@£ etc.), the password strength is increased by 1.
+* Finally, if an entered password contains at least two special characters, the password strength is increased by 1.
+
+As an added precaution, users are able to enter their username as well as their password.
+This lets our application check for the similarity between the two.
+Within the [script.js](script.js) file, we’ve implemented a longest common subsequence algorithm that allows us to compare the username string and the password string.
+If a username and password are more than 50% similar (contain more than 50% of the same characters in the same order) the following message is shown: 'Your password is very similar to your username'.
+
+#### More information and more details on evaluation of the application are contained in the [report](Report.pdf).
