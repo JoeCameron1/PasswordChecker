@@ -251,6 +251,8 @@ function buildPasswordTree() {
 }
 
 // This is disgusting but since we can't load files into javascript without a server it's gotta be done
+// Came from the SecLists 10k most common passwords list found here: https://github.com/danielmiessler/SecLists
+// Filtered out all passwords less than 8 characters long within the list, as the password checker does not suggest using passwords shorter than 8 characters
 var common_passwords =
     `123456789
 password
