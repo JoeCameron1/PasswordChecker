@@ -20,4 +20,15 @@ Alongside the report, our group also produced a video that explains the function
 
 ------------
 
-We are all aware that children are using internet connected devices more frequently now than ever before, so it is becoming more important that considerations are made for them with regard to usable security. Hence, the goal of this password checker is to help children form good security habits when making passwords (the foundation of secure authentication online) through a child-friendly manner for a better user experience.
+We are all aware that children are using internet connected devices more frequently now than ever before, so it is becoming more important that considerations are made for them with regard to usable security.
+Hence, the goal of this password checker is to help children form good security habits when making passwords (the foundation of secure authentication online) through a child-friendly manner for a better user experience.
+
+This proactive password checker is designed to act as a stand-alone service, where children can instantly gain feedback on their password security.
+This feedback will include not just security recommendations, such as avoiding common passwords etc., but also usability recommendations, such as a warning for a long password that may be too hard to remember.
+Along with the password recommendation information located below the password text box, these usability recommendations shall hopefully discourage bad security habits, such as writing passwords down if the password is too long to remember.
+
+Furthermore, as this is a password checker for minors, it is vital to effectively communicate feedback in a child-friendly manner that avoids too many confusing and technical terms that may intimidate a child.
+Instead, feedback should be concise, clear and simple.
+Also, it is well known that children typically have a shorter attention span than adults.
+Therefore, it is not acceptable to rely on static written rules when trying to motivate a minor to develop a secure password.
+As a result, the feedback should be instantaneous and dynamic as the user is typing to further enable interactivity and promote a subconscious reinforcement of good security practices.
