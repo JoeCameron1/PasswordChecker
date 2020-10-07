@@ -32,3 +32,29 @@ Instead, feedback should be concise, clear and simple.
 Also, it is well known that children typically have a shorter attention span than adults.
 Therefore, it is not acceptable to rely on static written rules when trying to motivate a minor to develop a secure password.
 As a result, the feedback should be instantaneous and dynamic as the user is typing to further enable interactivity and promote a subconscious reinforcement of good security practices.
+
+#### User Interface
+
+Particular care was taken when designing a clear and usable interface.
+The following criteria were taken into account:
+* Varying the importance and criticality of respective communications with the user.
+* Clarity and readability of any communication with the user.
+* Ease of interaction with any provided functionality.
+
+Messages that we show to the user must be easily understandable to young children so that even the youngest users are kept in-the-loop on the features that define a secure password.
+To do this we used encouraging and straightforward language in all of our messages, taking care to avoid technical terms like ‘special characters’ or ‘upper-case’ and complex words like ‘combination’.
+We also decided that colours were a suitable way of emphasising suggestions to aid communication, using the ‘red is bad, green is good’ colour scheme.
+One example of this is the messages beneath the password input, which range from bright red to bright green, directly communicating the scale of password strength to the user in a clear and intuitive way.
+
+Additionally, precautions have been taken not to clutter the interface with information.
+There are many standards and guidelines for creating a strong password, but showing them to the user all at once would only distract them from the task.
+When using the password checker, the user is presented with a simple username and password input, and a condensed list of five basic requirements for a good password.
+This ensures the user is given at least the basic knowledge they require to start working on a password while not flooding them with so much information that they don’t know where to start.
+
+By checking the boxes next to each requirement and counting the number of requirements met, this adds a fun gamified element to creating a secure password.
+By challenging the user to meet as many requirements as possible, the user is encouraged to make a secure password without explicitly telling them they must use certain features to be secure.
+A user doesn’t need to meet every requirement for their password to be classified as strong, because explicitly enforcing too many rules may discourage the user.
+Instead, while meeting 3 out of 4 of the requirements gets the user a strong password, they’re still encouraged to improve it to get the maximum score.
+
+As each requirement is met, a green tick is displayed next to it, and once they’re all satisfied, the score turns green too.
+This is in keeping with the colour scheme used to convey password strength to not confuse the user.
